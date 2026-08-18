@@ -1,0 +1,15 @@
+{
+	"name": "fabridatafactory",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "addc7be9-39a2-4a88-b5f7-3dc8792ca913",
+		"tenantId": "a73c80d8-24be-460a-ab11-9658b110ca21"
+	}
+}
