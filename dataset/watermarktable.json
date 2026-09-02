@@ -1,0 +1,21 @@
+{
+	"name": "watermarktable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_watermark",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "CustomerID",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "etl_watermark_2"
+		}
+	}
+}
