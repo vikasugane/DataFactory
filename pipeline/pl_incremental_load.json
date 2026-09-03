@@ -85,7 +85,7 @@
 							"CustomerID": {
 								"type": "String",
 								"value": {
-									"value": "@activity('Lookup_old watermark').output",
+									"value": "@string(activity('Lookup_old watermark').output.firstRow.CustomerID)",
 									"type": "Expression"
 								}
 							}
