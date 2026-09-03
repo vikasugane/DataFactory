@@ -10,6 +10,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@concat(\n    'file_',\n    formatDateTime(utcnow(), 'ddMMyyyyHHmmss'),\n    '.txt'\n)",
+					"type": "Expression"
+				},
 				"container": "destination"
 			},
 			"columnDelimiter": ",",
