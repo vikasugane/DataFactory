@@ -80,6 +80,16 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
+						"sqlReaderStoredProcedureName": "[dbo].[storecustomer]",
+						"storedProcedureParameters": {
+							"CustomerID": {
+								"type": "String",
+								"value": {
+									"value": "@activity('Lookup_old watermark').output",
+									"type": "Expression"
+								}
+							}
+						},
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
@@ -120,6 +130,8 @@
 			{
 				"name": "Stored procedure_incremental",
 				"type": "SqlServerStoredProcedure",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Incremental_activity",
