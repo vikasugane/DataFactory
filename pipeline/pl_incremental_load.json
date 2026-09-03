@@ -151,7 +151,7 @@
 					"storedProcedureParameters": {
 						"CustomerID": {
 							"value": {
-								"value": "@string(activity('Lookup_new watermark').output.firstRow.CustomerID)",
+								"value": "@string(activity('Lookup_new watermark').output.firstRow.Newwatermarkvalue)",
 								"type": "Expression"
 							},
 							"type": "String"
