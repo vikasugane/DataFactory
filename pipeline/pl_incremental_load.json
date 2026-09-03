@@ -141,7 +141,7 @@
 					"storedProcedureParameters": {
 						"CustomerID": {
 							"value": {
-								"value": "@activity('Lookup_old watermark').output.firstRow.Newwatermarkvalue\n\n",
+								"value": "@activity('Lookup_old watermark').output",
 								"type": "Expression"
 							},
 							"type": "String"
@@ -177,7 +177,7 @@
 					"storedProcedureParameters": {
 						"CustomerID": {
 							"value": {
-								"value": "@activity('Lookup_new watermark').output.firstRow.Newwatermarkvalue\n\n",
+								"value": "@activity('Lookup_new watermark').output",
 								"type": "Expression"
 							},
 							"type": "String"
